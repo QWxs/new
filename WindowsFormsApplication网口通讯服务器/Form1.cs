@@ -36,6 +36,11 @@ namespace WindowsFormsApplication网口通讯服务器
 
 
 
+
+
+
+
+
             IPAddress ip = IPAddress.Parse(textBox1.Text);
             Soc = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             Soc.Bind(new IPEndPoint(ip, 3000));
